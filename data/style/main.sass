@@ -1,0 +1,109 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    
+.root
+    background: linear-gradient(45deg, green 20%, white 100%)
+    width: 98%
+    height: 95vh
+    margin: 1%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    font-family: 'Piedra', cursive
+    position: relative
+    #modal
+        position: fixed
+        width: 60%
+        min-width: 350px
+        height: 60vh
+        top: 20vh 
+        left: auto
+        right: auto
+        background: linear-gradient(45deg, gray 20%, white 100%)
+        display: none
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        input
+            width: 300px
+            height: 30px
+            margin-bottom: 10px
+            border-radius: 5px
+            text-align: center
+            border: none
+            &:invalid
+                border: 1px solid red
+            &:focus
+                background-color: gainsboro
+        textarea
+            width: 300px
+            height: 200px
+            margin-bottom: 10px
+            padding: 10px
+        button
+            margin: 10px 75px
+            width: 150px
+            height: 30px
+            border: none
+            border-radius: 5px
+            cursor: pointer
+            &:hover
+                margin: 9px 70px
+                width: 160px
+                height: 32px
+        #modalIndicator
+            width: 90%
+            text-align: center
+            height: fit-content
+            min-height: 35px
+            margin: 15px 0
+            color: white
+
+    .menu
+        position: absolute
+        top: 10px
+        right: 10px
+        a
+            text-decoration: none
+            color: green
+            &:hover
+                color: gray
+    .place
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        #passMatch, #indicator
+            width: 100%
+            text-align: center
+            height: fit-content
+            min-height: 35px
+            margin: 15px 0
+            color: white
+            font-size: 20px
+        button
+            margin: 10px 75px
+            width: 150px
+            height: 30px
+            border: none
+            border-radius: 5px
+            cursor: pointer
+            &:hover
+                margin: 9px 70px
+                width: 160px
+                height: 32px   
+        input
+            width: 300px
+            height: 35px
+            border: none
+            border-radius: 5px
+            margin: 15px 0 15px 0
+            padding: 3px 0 0 10px
+            outline: none
+            &:invalid
+                border: 1px solid red
+            &:focus
+                background-color: gainsboro

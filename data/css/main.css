@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.root {
+  background: linear-gradient(45deg, green 20%, white 100%);
+  width: 98%;
+  height: 95vh;
+  margin: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Piedra', cursive;
+  position: relative;
+}
+
+.root #modal {
+  position: fixed;
+  width: 60%;
+  min-width: 350px;
+  height: 60vh;
+  top: 20vh;
+  left: auto;
+  right: auto;
+  background: linear-gradient(45deg, gray 20%, white 100%);
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.root #modal input {
+  width: 300px;
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+}
+
+.root #modal input:invalid {
+  border: 1px solid red;
+}
+
+.root #modal input:focus {
+  background-color: gainsboro;
+}
+
+.root #modal textarea {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.root #modal button {
+  margin: 10px 75px;
+  width: 150px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.root #modal button:hover {
+  margin: 9px 70px;
+  width: 160px;
+  height: 32px;
+}
+
+.root #modal #modalIndicator {
+  width: 90%;
+  text-align: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 35px;
+  margin: 15px 0;
+  color: white;
+}
+
+.root .menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.root .menu a {
+  text-decoration: none;
+  color: green;
+}
+
+.root .menu a:hover {
+  color: gray;
+}
+
+.root .place {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.root .place #passMatch, .root .place #indicator {
+  width: 100%;
+  text-align: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 35px;
+  margin: 15px 0;
+  color: white;
+  font-size: 20px;
+}
+
+.root .place button {
+  margin: 10px 75px;
+  width: 150px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.root .place button:hover {
+  margin: 9px 70px;
+  width: 160px;
+  height: 32px;
+}
+
+.root .place input {
+  width: 300px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  margin: 15px 0 15px 0;
+  padding: 3px 0 0 10px;
+  outline: none;
+}
+
+.root .place input:invalid {
+  border: 1px solid red;
+}
+
+.root .place input:focus {
+  background-color: gainsboro;
+}
+/*# sourceMappingURL=main.css.map */
